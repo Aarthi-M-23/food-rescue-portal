@@ -1,0 +1,144 @@
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+    background-color: #f8fafc;
+    color: #1e293b;
+    line-height: 1.6;
+}
+
+/* Navbar */
+.navbar {
+    background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+    color: white;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1);
+}
+
+.navbar h1 {
+    font-size: 1.25rem;
+    font-weight: 700;
+    letter-spacing: -0.025em;
+    color: #10b981;
+}
+
+.navbar a.logout-btn {
+    color: #ef4444;
+    background: rgba(239, 68, 68, 0.1);
+    padding: 0.5rem 1rem;
+    border-radius: 0.375rem;
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.2s;
+}
+
+.navbar a.logout-btn:hover {
+    background: #ef4444;
+    color: white;
+}
+
+/* Containers & Cards */
+.container {
+    max-width: 1100px;
+    margin: 2rem auto;
+    padding: 0 1.5rem;
+}
+
+.welcome-badge {
+    background: white;
+    border-left: 4px solid #10b981;
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+    margin-bottom: 2rem;
+}
+
+.role-tag {
+    background: #d1fae5;
+    color: #065f46;
+    padding: 0.25rem 0.75rem;
+    border-radius: 9999px;
+    font-size: 0.875rem;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+/* Card Grid */
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+}
+
+.card {
+    background: white;
+    border-radius: 0.75rem;
+    padding: 1.5rem;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03);
+    border: 1px solid #e2e8f0;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+}
+
+.card h4 {
+    font-size: 1.125rem;
+    color: #0f172a;
+    margin-bottom: 0.75rem;
+}
+
+.card p {
+    font-size: 0.9rem;
+    color: #64748b;
+    margin-bottom: 0.5rem;
+}
+
+/* Action Buttons */
+.btn {
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    background-color: #10b981;
+    color: white;
+    padding: 0.75rem 1rem;
+    text-decoration: none;
+    border-radius: 0.5rem;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+    margin-top: 1rem;
+    transition: background-color 0.2s;
+}
+
+.btn:hover {
+    background-color: #059669;
+}
+
+.btn-blue { background-color: #2563eb; }
+.btn-blue:hover { background-color: #1d4ed8; }
+
+.btn-orange { background-color: #f97316; }
+.btn-orange:hover { background-color: #ea580c; }
+
+/* Expiry Countdown Styling */
+.expiry-timer {
+    font-weight: 700;
+    color: #f59e0b;
+    background: #fef3c7;
+    padding: 0.2rem 0.5rem;
+    border-radius: 0.25rem;
+}
